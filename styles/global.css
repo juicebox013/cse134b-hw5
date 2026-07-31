@@ -1,0 +1,16 @@
+body {
+    background: var(--page-background);
+    color: var(--text-color);
+  }
+  
+  nav,
+  header,
+  footer,
+  .task-box {
+    background: var(--panel-background);
+    border-color: var(--border-color);
+  }
+  
+  a {
+    color: var(--accent-color);
+  }

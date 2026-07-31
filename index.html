@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE134b HW2 : Personal Tracker</title>
     <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/global.css">
 </head>
+<!--this script tag is placed at the top so the javascript loads before the html does.-->
+<script src="js/theme.js" defer></script>
 <body>
     <nav class="menu">
         <ul>
@@ -23,6 +27,15 @@
         <br>
 
         <em> you have completed PLACEHOLDER tasks</em>
+        <!--the 'hidden' tag is what makes this only accessible with javascript. when javascript is disabled, this form will not appear.-->
+        <form class="theme-picker" hidden>
+            <label for="theme-select">Theme</label>
+            <select id="theme-select" name="theme">
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </form>
     </header>
     <h1>PLACEHOLDER (add current day with JS here)</h1>
     <label for="feelings">How are you feeling about your tasks today?</label>

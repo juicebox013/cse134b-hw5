@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Information Page</title>
     <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/tokens.css">
 </head>
+<script src="js/theme.js" defer></script>
 <body>
+  <header>
+    <form class="theme-picker" hidden>
+      <label for="theme-select">Theme</label>
+      <select id="theme-select" name="theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </form>
+  </header>
     <nav class="menu">
         <ul>
           <li><a href="index.html">Dashboard</a></li>

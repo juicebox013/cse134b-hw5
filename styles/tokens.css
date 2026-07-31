@@ -1,0 +1,41 @@
+:root {
+    color-scheme: light dark;
+  
+    --page-background: white;
+    --text-color: black;
+    --panel-background: #f4f4f4;
+    --border-color: #444;
+    --accent-color: #5b6ee1;
+  }
+  
+  /* 'media' is a rule that basically checks whether your browswer/system prefers something else.*/
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page-background: #121212;
+      --text-color: #f5f5f5;
+      --panel-background: #1f1f1f;
+      --border-color: #aaaaaa;
+      --accent-color: #9fa8ff;
+    }
+  }
+   /* if the page has a 'light' background preference, the root will use this instead*/
+  :root[data-theme="light"] {
+    color-scheme: light;
+  
+    --page-background: white;
+    --text-color: black;
+    --panel-background: #f4f4f4;
+    --border-color: #444;
+    --accent-color: #5b6ee1;
+  }
+  
+  /* if the page has a 'dark' background preference, the root will use this instead*/
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+  
+    --page-background: #121212;
+    --text-color: #f5f5f5;
+    --panel-background: #1f1f1f;
+    --border-color: #aaaaaa;
+    --accent-color: #9fa8ff;
+  }
