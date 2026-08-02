@@ -7,9 +7,11 @@
     <link rel="icon" type="image/x-icon" href="images/cat-favicon.jpg">
     <link rel="stylesheet" href="styles/tokens.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/weather-card.css">
 </head>
 <!--this script tag is placed at the top so the javascript loads before the html does.-->
 <script src="js/theme.js" defer></script>
+<script src="js/weather-card.js" defer></script>
 <body>
     <nav class="menu">
         <ul>
@@ -38,6 +40,19 @@
           </form>
     </header>
     <h1>PLACEHOLDER (add current day with JS here)</h1>
+
+    <section>
+        <h2>Current Weather</h2>
+      
+        <weather-card latitude="32.88" longitude="-117.23">
+          <p>Weather is unavailable right now. Check your local forecast before heading out.</p>
+        </weather-card>
+      
+        <noscript>
+          <p>This weather card needs JavaScript to load live weather data.</p>
+        </noscript>
+    </section>
+
     <label for="feelings">How are you feeling about your tasks today?</label>
     <br>
 
@@ -79,10 +94,26 @@
         width="600"
         height="400">
     </iframe>
+    <template id="weather-card-template">
+        <article class="weather-card">
+          <h3 class="weather-card__title">Current weather</h3>
+          <p class="weather-card__status"></p>
+          <dl class="weather-card__data" hidden>
+            <dt>Temperature</dt>
+            <dd class="weather-card__temperature"></dd>
+      
+            <dt>Wind speed</dt>
+            <dd class="weather-card__wind"></dd>
+          </dl>
+          <p class="weather-card__source">
+            Data from Open-Meteo.
+          </p>
+        </article>
+      </template>
     <picture>
         <source srcset="/images/big-bird.png" media="(width >= 600px)" />
         <img src="images/cat-favicon.jpg" alt="MDN" />
-      </picture>
+    </picture>
     <footer> Copyright by Justin Nguyen @ UCSD </footer>
 </body>
 </html>

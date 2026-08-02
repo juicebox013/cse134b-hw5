@@ -1,0 +1,26 @@
+weather-card {
+    display: block;
+    margin-block: 1rem;
+  }
+  
+  .weather-card {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--panel-background);
+  }
+  
+  weather-card[state="loading"] .weather-card__status {
+    font-style: italic;
+  }
+  
+  weather-card[state="error"] .weather-card__status {
+    font-weight: bold;
+  }
+  
+  .weather-card__data {
+    margin-block: 1rem;
+  }
+  
+  .weather-card__data dt {
+    font-weight: bold;
+  }
