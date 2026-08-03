@@ -1,0 +1,27 @@
+{
+    "title": "CSE134b HW5: Personal Tracker",
+    "author": "Justin Nguyen",
+    "year": "2026",
+    "nav": [
+      {
+        "label": "Dashboard",
+        "url": "/"
+      },
+      {
+        "label": "Calendar",
+        "url": "/calendar-page/"
+      },
+      {
+        "label": "All Tasks",
+        "url": "/task-page/"
+      },
+      {
+        "label": "Create New Task",
+        "url": "/create-task/"
+      },
+      {
+        "label": "Experiments",
+        "url": "/experiments/"
+      }
+    ]
+  }

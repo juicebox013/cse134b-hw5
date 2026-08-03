@@ -1,0 +1,25 @@
+{
+  "name": "cse134b-hw5",
+  "version": "1.0.0",
+  "description": "GITHUB LINK : https://github.com/juicebox013/cse134b-hw5 # PART 1 when using the theme picker, if a user has a default browser theme set as 'dark', there may be a slight flash if you change the theme to be 'light' using the picker and refresh the page. this is because when you refresh the page, the page is using the default mode of 'dark' for a slight second before the js runs and changes it back to 'light'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juicebox013/cse134b-hw5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juicebox013/cse134b-hw5/issues"
+  },
+  "homepage": "https://github.com/juicebox013/cse134b-hw5#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
