@@ -10,3 +10,5 @@ the web component custom element that i inserted based on the suggestions was a 
 the tag is <weather-card></weather-card> and it supports latitude and longitude attributes and reflects states such as idle, loading, and error. 
 
 # Part 3
+
+i chose to use the eleventy ssg to populate adn generate basic html structures with prewritten headers, footers, and head portions for my pages. Although it did not entirely work because I was unsure of the structure and formatting, i was able to successfully recreate a majority of my index.html. The CSS/JS and some images did not render correctly because I was unsure how to include everything, but for the most part, the html worked. 
